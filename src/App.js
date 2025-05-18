@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import Header from "./HeaderComponent/Header";
 import Navbar from "./NavbarComponent/Navbar";
 import Sidebar from "./SidebarComponent/Sidebar";
 import "./App.css";
-import "./NavBarComponent/NavBar.css";
-import "./SideBarComponent/SideBar.css";
+import "./HeaderComponent/Header.css";
+import "./NavbarComponent/Navbar.css";
+import "./SidebarComponent/Sidebar.css";
 
 function GymApp() {
   const [isLoggedIn, setIsLoggedIn] = useState(true); // Exempel på koniditonell rendering
@@ -14,6 +16,10 @@ function GymApp() {
 
       <div className="navbarcomponent">
         <Navbar />
+
+        <div className="headercomponent">
+          <Header />
+        </div>
 
         <div className="main-content">
           {isLoggedIn ? (

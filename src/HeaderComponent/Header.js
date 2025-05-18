@@ -7,3 +7,15 @@
 - Ska innehålla en **Header** överst med texten: F25D Borås YH - React kurs
 
 */
+import { useState } from "react";
+
+function Header() {
+  return (
+    <header className="header">
+      <div className="headerdiv">
+        <h1>F25D Borås YH - React kurs</h1>
+      </div>
+    </header>
+  );
+}
+export default Header;
