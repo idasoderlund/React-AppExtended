@@ -1,0 +1,82 @@
+.asidemenu {
+  display: flex;
+  box-sizing: border-box;
+  width: 200px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+.sidebarlist {
+  list-style: none;
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  display: none;
+}
+
+.sidebarlist a {
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.bar {
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+@media (min-width: 769px) {
+  .sidebarlist {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    background-color: #a53860;
+    top: auto;
+    right: auto;
+    padding-right: 10px;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .responsiveMenu2 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarlist {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #a53860;
+    flex-direction: column;
+    width: 150px;
+    padding: 10px;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .responsiveMenu2 {
+    display: block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 100;
+  }
+
+  .sidebarlist.open {
+    display: flex;
+  }
+}
+
+.responsiveMenu2 {
+  display: block;
+}

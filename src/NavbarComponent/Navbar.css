@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #a53860;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  position: relative;
+}
+
+.applogo {
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: #4f1c51;
+  font-family: "Shizuru", system-ui;
+}
+
+@media (max-width: 768px) {
+  .applogo {
+    font-size: 1.2em;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.responsiveMenu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  z-index: 20;
+}
+
+.bar {
+  height: 3px;
+  background-color: #fff !important;
+  margin: 4px 0;
+}
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #a53860;
+    color: #fff;
+    flex-direction: column;
+    width: 150px;
+    padding: 10px;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .responsiveMenu {
+    display: block;
+    z-index: 100;
+
+    background-color: #a53860; /* eller transparent för test */
+  }
+}
