@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import Header from "./HeaderComponent/Header";
 import Navbar from "./NavbarComponent/Navbar";
-import Sidebar from "./SidebarComponent/Sidebar";
+import { Sidebar, SideMenu } from "./path/to/Sidebar";
 import "./App.css";
 import "./HeaderComponent/Header.css";
 import "./NavbarComponent/Navbar.css";
 import "./SidebarComponent/Sidebar.css";
+import "./MainComponent/Button";
 
 function GymApp() {
   const [isLoggedIn, setIsLoggedIn] = useState(true); // Exempel på koniditonell rendering
 
   return (
     <div className="app-container">
-      <Sidebar />
-
+      <Sidebar /> <SideMenu />
       <div className="navbarcomponent">
         <Navbar />
 
