@@ -43,19 +43,29 @@ export function SideMenu() {
   };
 
   return (
-    <div className="sidebar">
+    <div className="button-container">
       <button
+        className="sidebar-button"
         label="Click Tag BTN"
         onClick={() => handleButtonClick("Click Tag BTN")}
-      />
+      >
+        Click Tag BTN
+      </button>
+
       <button
+        className="sidebar-button"
         label="Click Tag BTN"
         onClick={() => handleButtonClick("Click Tag BTN")}
-      />
+      >
+        Click Tag BTN
+      </button>
       <button
+        className="sidebar-button"
         label="Click Tag BTN"
         onClick={() => handleButtonClick("Click Tag BTN")}
-      />
+      >
+        Click Tag BTN
+      </button>
     </div>
   );
 }

@@ -4,7 +4,7 @@ Komponent 2 är en sidebar som ska innehålla flera button och de har
 samma design med hover effecr. buttons ska vara en komponent
 som vi anropar inuti sidemenu komponent.*/
 
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 
 function Button({ label, onClick }) {
   return (
@@ -14,4 +14,4 @@ function Button({ label, onClick }) {
   );
 }
 
-export default Button;
+export default Button;*/
