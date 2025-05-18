@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./HeaderComponent/Header";
 import Navbar from "./NavbarComponent/Navbar";
-import { Sidebar, SideMenu } from "./path/to/Sidebar";
+import { Sidebar, SideMenu } from "./SidebarComponent/Sidebar";
 import "./App.css";
 import "./HeaderComponent/Header.css";
 import "./NavbarComponent/Navbar.css";

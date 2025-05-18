@@ -35,32 +35,27 @@ export function Sidebar() {
       </ul>
     </aside>
   );
-
-  
 }
 
 export function SideMenu() {
-    const handleButtonClick = (buttonName) => {
-      console.log(`Knapp ${buttonName} Clicked`);
-    };
+  const handleButtonClick = (buttonName) => {
+    console.log(`Knapp ${buttonName} Clicked`);
+  };
 
-    return (
-      <div className="sidebar">
-        <button
-          label="Click Tag BTN"
-          onClick={() => handleButtonClick("Click Tag BTN")}
-        />
-        <button
-          label="Click Tag BTN"
-          onClick={() => handleButtonClick("Click Tag BTN")}
-        />
-        <button
-          label="Click Tag BTN"
-          onClick={() => handleButtonClick("Click Tag BTN")}
-        />
-      </div>
-    );
-  }
-
-export default Sidebar;
-export default SideMenu;
+  return (
+    <div className="sidebar">
+      <button
+        label="Click Tag BTN"
+        onClick={() => handleButtonClick("Click Tag BTN")}
+      />
+      <button
+        label="Click Tag BTN"
+        onClick={() => handleButtonClick("Click Tag BTN")}
+      />
+      <button
+        label="Click Tag BTN"
+        onClick={() => handleButtonClick("Click Tag BTN")}
+      />
+    </div>
+  );
+}
