@@ -1,4 +1,3 @@
-import Button from "../MainComponent/Button";
 import React, { useState } from "react";
 
 export function Sidebar() {

@@ -1,0 +1,17 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f1f0e9;
+  border-radius: 15px;
+}
+
+.footer-container h3 {
+  color: #4f1c51;
+  width: 100%;
+  font-size: 1.5em;
+  font-family: "Shadows Into Light";
+  height: 0.2em;
+  padding-bottom: 20px;
+}

@@ -6,18 +6,21 @@ import "./App.css";
 import "./HeaderComponent/Header.css";
 import "./NavbarComponent/Navbar.css";
 import "./SidebarComponent/Sidebar.css";
-import "./MainComponent/Button";
 import PostList from "./MainComponent/PostList";
 import Post from "./MainComponent/Post";
+import Footer from "./FooterComponent/Footer";
+import "./FooterComponent/Footer.css";
 
 function GymApp() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <div className="app-container">
-      <Sidebar /> <SideMenu />
-      <div className="navbarcomponent">
-        <Navbar />
+      <Sidebar />
+      <div className="components">
+        <div className="navbarcomponent">
+          <Navbar />
+        </div>
 
         <div className="headercomponent">
           <Header />
@@ -25,17 +28,21 @@ function GymApp() {
 
         {isLoggedIn ? (
           <div>
-            <section className="centeredcontent">
-              <div className="post-container">
+            <div className="grid-container">
+              <div className="post-grid-column">
                 <PostList />
               </div>
-            </section>
+              <div className="btns-grid-column">
+                <SideMenu />
+              </div>
+            </div>
           </div>
         ) : (
           <div>
             <p>Please Sign In to see your daily content.</p>
           </div>
         )}
+        <Footer />
       </div>
     </div>
   );
