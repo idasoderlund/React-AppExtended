@@ -80,26 +80,3 @@
 .responsiveMenu2 {
   display: block;
 }
-
-/*-----------------Sidebar-buttons------------------------------------------------*/
-.button-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1 fr);
-}
-
-.sidebar-button {
-  height: 90px;
-  width: 90px;
-  border-radius: 100px;
-  color: #4f1c51;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  background-color: #f1f0e9;
-  margin: 20px 30px;
-}
-
-.sidebar-button:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.9);
-}

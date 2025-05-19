@@ -13,6 +13,36 @@ body {
   min-height: 100vh;
 }
 
+.post-container {
+  background-color: #f1f0e9;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 2;
+  grid-column: 1;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1 fr);
+}
+
+.sidebar-button {
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  color: #4f1c51;
+  grid-template-columns: 2;
+  grid-column: 2;
+  background-color: #f1f0e9;
+  margin: 20px 30px;
+}
+
+.sidebar-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.9);
+}
+
 .navbarcomponent {
   flex: 1;
   display: flex;
@@ -28,8 +58,8 @@ body {
 
 .centeredcontent {
   color: #4f1c51;
-  font-family: "Parisienne";
-  font-size: 1.7em;
+  font-family: "Shadows Into Light";
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,27 +67,9 @@ body {
   flex-wrap: wrap;
 }
 
-.firstparagraph,
-.secondparagraph {
-  color: #4f1c51;
-  font-family: "Shadows Into Light";
-  text-decoration: underline;
-}
-
-#scheduleparagraph,
-#calorieparagraph {
-  color: #4f1c51;
-}
-
 @media (max-width: 768px) {
   .centeredcontent h1 {
     font-size: 1.3em;
-  }
-}
-
-@media (max-width: 768px) {
-  #calorieparagraph {
-    margin: 20px;
   }
 }
 
@@ -74,13 +86,4 @@ body {
 
 .App-link {
   color: #4f1c51;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -3,7 +3,9 @@
   color: #4f1c51;
   font-family: "Shadows Into Light";
   display: flex;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f0e9;
+  border-radius: 15px;
+  padding: 0 10px;
 }
