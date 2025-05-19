@@ -36,6 +36,11 @@ body {
   justify-content: center;
   text-align: center;
 }
+.post-grid-column:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.9);
+}
 
 .post-container {
   background-color: #f1f0e9;

@@ -12,8 +12,6 @@ import Footer from "./FooterComponent/Footer";
 import "./FooterComponent/Footer.css";
 
 function GymApp() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-
   return (
     <div className="app-container">
       <Sidebar />
@@ -26,22 +24,14 @@ function GymApp() {
           <Header />
         </div>
 
-        {isLoggedIn ? (
-          <div>
-            <div className="grid-container">
-              <div className="post-grid-column">
-                <PostList />
-              </div>
-              <div className="btns-grid-column">
-                <SideMenu />
-              </div>
-            </div>
+        <div className="grid-container">
+          <div className="post-grid-column">
+            <PostList />
           </div>
-        ) : (
-          <div>
-            <p>Please Sign In to see your daily content.</p>
+          <div className="btns-grid-column">
+            <SideMenu />
           </div>
-        )}
+        </div>
         <Footer />
       </div>
     </div>
