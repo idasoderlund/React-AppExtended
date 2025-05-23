@@ -10,3 +10,9 @@
   padding: 0 10px;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width: 768px) {
+  .headerdiv h1 {
+    margin-top: 35px;
+  }
+}
