@@ -16,3 +16,13 @@
   height: 0.2em;
   padding-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .footer-container h3 {
+    font-size: 1em;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
