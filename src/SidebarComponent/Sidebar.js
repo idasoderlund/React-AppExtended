@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TagList } from "./TagList";
 
 export function Sidebar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +16,6 @@ export function Sidebar() {
         aria-expanded={isMobileMenuOpen}
         role="button"
       >
-        {/*Hamburgerstreck*/}
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -37,34 +37,9 @@ export function Sidebar() {
 }
 
 export function SideMenu() {
-  const handleButtonClick = (buttonName) => {
-    console.log(`Knapp ${buttonName} Clicked`);
-  };
-
   return (
     <div className="button-container">
-      <button
-        className="sidebar-button"
-        label="Click Tag BTN"
-        onClick={() => handleButtonClick("Click Tag BTN")}
-      >
-        Click Tag BTN
-      </button>
-
-      <button
-        className="sidebar-button"
-        label="Click Tag BTN"
-        onClick={() => handleButtonClick("Click Tag BTN")}
-      >
-        Click Tag BTN
-      </button>
-      <button
-        className="sidebar-button"
-        label="Click Tag BTN"
-        onClick={() => handleButtonClick("Click Tag BTN")}
-      >
-        Click Tag BTN
-      </button>
+      <TagList />
     </div>
   );
 }
